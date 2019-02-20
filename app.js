@@ -40,8 +40,7 @@ app.get('/api/genres/:id', function(request, response){
                     error: `Genre ${id} not found`
                 });
             }
-
     });
 })
 
-app.listen(8000);
+app.listen(process.env.PORT || 8000);
